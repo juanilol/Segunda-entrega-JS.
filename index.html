@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Máquina de Bebidas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="productos-container">
+    <!-- Los productos se mostrarán aquí -->
+  </div>
+  
+  <div id="carrito-container">
+    <!-- El carrito se mostrará aquí -->
+  </div>
+  
+  <form id="metodo-pago-form">
+    <label for="metodo-pago">Seleccione el método de pago:</label>
+    <select id="metodo-pago">
+      <option value="">Seleccione un método de pago</option>
+      <option value="efectivo">Efectivo</option>
+      <option value="tarjeta">Tarjeta</option>
+      <option value="transferencia">Transferencia</option>
+    </select>
+  
+    <div id="monto-efectivo" style="display: none;">
+      <label for="monto">Monto en efectivo:</label>
+      <input type="number" id="monto" step="0.01">
+    </div>
+  
+    <button type="submit">Realizar compra</button>
+  </form>
+
+  <!-- Aquí debes incluir el script de JavaScript -->
+  <script src="main.js"></script>
+</body>
+</html>
